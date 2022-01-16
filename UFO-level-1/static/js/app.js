@@ -16,3 +16,23 @@ data.forEach(function(ufoReport) {
       cell.text(value);
     });
   });
+
+  var button = d3.select("#filter-btn");
+
+  var inputField = d3.select("datetime");
+
+  button.on("click",function(){
+
+    //add html code to exisiting div
+    d3.select(".classofsomething").html("<img src='https://gph.to/2krfn0w'");
+
+  });
+
+  inputField.on("change",function(){
+
+    //Save the input into variable newText
+    var newText = d3.event.target.value;
+    console.log(newText);
+
+
+  });
